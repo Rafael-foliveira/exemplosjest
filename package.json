@@ -1,0 +1,23 @@
+{
+  "name": "exercicios-rafa",
+  "description": "- [ECMAScript Modules](https://jestjs.io/docs/ecmascript-modules)\r - [Mastering Jest Config for your JavaScript projects](https://phillcode.io/jest-config)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand --config ./jest.config.js",
+    "test:watch": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand --config ./jest.config.js --watch"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
